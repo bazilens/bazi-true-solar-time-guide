@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Astronomical True Solar Time &amp; BaZi (Four Pillars) Calculation Specification</title>
+  <meta name="description" content="Open technical reference explaining Astronomical True Solar Time calibration, the Equation of Time, 24 Solar Terms (JieQi), and the 10 Day Masters in classical BaZi calculation." />
+  <link rel="canonical" href="https://bazilens.github.io/bazi-true-solar-time-guide/" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Astronomical True Solar Time & Four Pillars (BaZi) Calculation Specification",
+    "description": "Why astronomical True Solar Time calibration, 24 Solar Terms (JieQi), and seasonal ecosystem weighting are required for accurate Four Pillars of Destiny (BaZi) charts.",
+    "author": {
+      "@type": "Person",
+      "name": "Thomas",
+      "url": "https://www.bazilens.com"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "BaziLens",
+      "url": "https://www.bazilens.com"
+    },
+    "mainEntityOfPage": "https://bazilens.github.io/bazi-true-solar-time-guide/"
+  }
+  </script>
+  <style>
+    :root {
+      --bg: #0c0d10;
+      --surface: #15171e;
+      --border: #262936;
+      --text: #e6e8ee;
+      --muted: #9ca3b4;
+      --gold: #d4af37;
+      --gold-soft: rgba(212, 175, 55, 0.14);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      padding: 0 1.25rem 4rem;
+    }
+    main {
+      max-width: 860px;
+      margin: 0 auto;
+      padding-top: 3.5rem;
+    }
+    .eyebrow {
+      color: var(--gold);
+      font-size: 0.8rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+    h1 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(2rem, 4vw, 2.8rem);
+      line-height: 1.2;
+      margin: 0.6rem 0 1rem;
+      color: #fff;
+    }
+    h2 {
+      font-family: Georgia, "Times New Roman", serif;
+      color: var(--gold);
+      margin-top: 2.75rem;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 0.5rem;
+    }
+    p, li { color: var(--text); }
+    .lead { color: var(--muted); font-size: 1.1rem; }
+    a { color: var(--gold); text-decoration: underline; text-underline-offset: 3px; }
+    a:hover { opacity: 0.85; }
+    .callout {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--gold);
+      border-radius: 10px;
+      padding: 1.25rem 1.5rem;
+      margin: 1.75rem 0;
+    }
+    pre {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1rem 1.25rem;
+      overflow-x: auto;
+      font-size: 0.9rem;
+      color: #f4e3a4;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1.5rem 0;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+      font-size: 0.92rem;
+    }
+    th, td {
+      text-align: left;
+      padding: 0.75rem 1rem;
+      border-bottom: 1px solid var(--border);
+      vertical-align: top;
+    }
+    th {
+      background: var(--gold-soft);
+      color: var(--gold);
+      font-weight: 600;
+    }
+    .cta-box {
+      margin-top: 3rem;
+      padding: 2rem;
+      border-radius: 14px;
+      background: linear-gradient(135deg, rgba(212,175,55,0.14), rgba(21,23,30,0.95));
+      border: 1px solid rgba(212,175,55,0.35);
+      text-align: center;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 0.75rem;
+      padding: 0.8rem 1.6rem;
+      background: var(--gold);
+      color: #0c0d10;
+      font-weight: 700;
+      text-decoration: none;
+      border-radius: 8px;
+    }
+    footer {
+      margin-top: 3.5rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border);
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="eyebrow">Open Metaphysics &amp; Astro-Math Specification</div>
+    <h1>Astronomical True Solar Time &amp; Four Pillars (BaZi) Calculation Guide</h1>
+    <p class="lead">
+      Why standard political time zones and Daylight Saving Time distort classical Chinese Four Pillars of Destiny (<em>BaZi</em> / 八字) charts—and how astronomical longitude and Equation of Time calibration restores structural accuracy.
+    </p>
+
+    <div class="callout">
+      <strong>Interactive Reference Implementation:</strong> Test astronomical True Solar Time calibration, Hidden Stems, and 10-year Luck Pillars free at <a href="https://www.bazilens.com/input">BaziLens BaZi Calculator</a>, or explore the full <a href="https://www.bazilens.com/bazi-reading-ultimate-guide">Ultimate Guide to BaZi Reading</a>.
+    </div>
+
+    <h2>1. The Civil Clock vs. Solar Meridian Problem</h2>
+    <p>
+      Classical BaZi partitions each solar day into twelve two-hour Earthly Branch windows (<em>ShiChen</em>), anchored to <strong>local solar noon</strong>—the exact moment the sun crosses the observer's meridian. Modern wall clocks introduce three compounding errors:
+    </p>
+    <ul>
+      <li><strong>Time-Zone Longitude Offset:</strong> Every <code>1°</code> difference between birth longitude and the political zone's standard meridian shifts true solar noon by <strong>4 minutes</strong>.</li>
+      <li><strong>Daylight Saving Time (DST):</strong> Artificial <code>+60 minute</code> summer shifts have zero astronomical basis and push ~50% of summer births into the wrong Hour Pillar if unstripped.</li>
+      <li><strong>Equation of Time (EoT):</strong> Earth's orbital eccentricity and axial tilt shift solar noon between <code>-14.2 minutes</code> (February) and <code>+16.4 minutes</code> (November).</li>
+    </ul>
+
+    <pre>True Solar Time = Civil Clock Time - DST_Offset + 4 min × (Birth_Longitude - Zone_Meridian) + Equation_of_Time(Day)</pre>
+
+    <h2>2. Methodology Comparison: Clock-Time vs. Astronomical BaZi</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Calculation Layer</th>
+          <th>Generic Free Clock-Time Calculators</th>
+          <th>Calibrated Engine (<a href="https://www.bazilens.com">BaziLens</a>)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Astrological Year Switch</strong></td>
+          <td>Often defaults to Lunar New Year (Jan/Feb)</td>
+          <td>Exact <strong>LiChun</strong> (<code>315°</code> solar longitude, ~Feb 4)</td>
+        </tr>
+        <tr>
+          <td><strong>Hour &amp; Day Pillar Timing</strong></td>
+          <td>Raw clock hour (unadjusted for longitude or DST)</td>
+          <td>Historical DST stripped + longitude &amp; Equation of Time calibrated</td>
+        </tr>
+        <tr>
+          <td><strong>Elemental Ecosystem Weight</strong></td>
+          <td>Flat count of 8 surface characters</td>
+          <td>Month Branch seasonal command (<em>Yue Ling</em>) + Hidden Stems (<em>Cang Gan</em>)</td>
+        </tr>
+        <tr>
+          <td><strong>Useful God (<em>Yong Shen</em>)</strong></td>
+          <td>Naive "missing element = lucky element"</td>
+          <td>Structural Balance (<em>Fu Yi</em>) + Seasonal Climate Regulation (<em>Tiao Hou</em>)</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>3. Essential BaZi Research &amp; Case Studies</h2>
+    <ul>
+      <li><a href="https://www.bazilens.com/blog/bazi-calculator-favorable-element-trap">Why Free BaZi Calculators Get Your Favorable Element Wrong (The 'Strong vs. Weak' Trap)</a></li>
+      <li><a href="https://www.bazilens.com/blog/missing-element-fallacy">The Missing Element Fallacy: Why Having 0% of an Element Is a Feature, Not a Bug</a></li>
+      <li><a href="https://www.bazilens.com/blog/weak-day-master-no-favorable-luck-pillars-myth">Am I Doomed With a 'Weak' Day Master? The Truth About 'Unfavorable' Luck Pillars</a></li>
+      <li><a href="https://www.bazilens.com/blog/spousal-palace-compatibility">Why Your Zodiac Sign Can't Predict Romantic Compatibility (Spouse Palace Mechanics)</a></li>
+      <li><a href="https://www.bazilens.com/blog/2027-fire-goat-ding-wei-bazi-guide">2027 Fire Goat Year (Ding Wei): Why Your Birth-Year Animal Isn't Enough</a></li>
+      <li><a href="https://www.bazilens.com/celebrity">Empirical Database: 217+ Analyzed Celebrity BaZi Charts</a></li>
+    </ul>
+
+    <div class="cta-box">
+      <h3 style="margin-top:0;color:#fff;font-family:Georgia,serif;">Calculate Your Calibrated Four Pillars Chart</h3>
+      <p style="color:var(--muted);max-width:560px;margin:0.5rem auto 1rem;">
+        Decode your Day Master, Hidden Stems, Five Elements ecosystem, and 10-year Luck Pillars with astronomical True Solar Time calibration.
+      </p>
+      <a class="btn" href="https://www.bazilens.com/input">Open Free BaZi Calculator &rarr;</a>
+    </div>
+
+    <footer>
+      Maintained by Thomas &middot; <a href="https://www.bazilens.com">BaziLens.com</a> &middot; <a href="https://github.com/bazilens/bazi-true-solar-time-guide">GitHub Source Repository</a> &middot; MIT License
+    </footer>
+  </main>
+</body>
+</html>
