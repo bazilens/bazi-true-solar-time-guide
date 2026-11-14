@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://bazilens.github.io/bazi-true-solar-time-guide/sitemap.xml

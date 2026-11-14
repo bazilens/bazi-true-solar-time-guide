@@ -1,0 +1,37 @@
+# BaziLens Open Astronomical BaZi Specification Hub
+
+> Open reference documentation maintained by Thomas for BaziLens (https://www.bazilens.com). Covers Astronomical True Solar Time calibration, the Equation of Time, 24 Solar Terms (JieQi), the 10 Day Masters, Spousal Palace mechanics, and empirical Four Pillars research.
+
+## Core Specification Pages
+- [Astronomical True Solar Time & BaZi Calculation Guide](https://bazilens.github.io/bazi-true-solar-time-guide/)
+- [Empirical Research Index (57 Published Studies)](https://bazilens.github.io/bazi-true-solar-time-guide/research-index.html)
+
+## Open Technical Reference Notes
+- [True Solar Time Offset Reference: Singapore, Hawaii & North America](https://bazilens.github.io/bazi-true-solar-time-guide/notes/true-solar-time-singapore-north-america.html): Quantitative longitude, Daylight Saving Time, and Equation of Time offsets across 8 global cities explaining BaZi Hour Pillar and 23:00 Day Pillar shifts.
+- [Ji Earth & Ding Fire Spousal Palace Directional Flow Matrix](https://bazilens.github.io/bazi-true-solar-time-guide/notes/yin-earth-yin-fire-spousal-palace.html): Structural taxonomy of all 12 Ji Earth and Ding Fire Day Pillars, mapping Hidden Stems, Output-drain vs. Resource-supported Spousal Palaces, and ecological rebalancing elements.
+- [Hurting Officer (Shang Guan) & Seven Killings (Qi Sha) Mechanics](https://bazilens.github.io/bazi-true-solar-time-guide/notes/hurting-officer-seven-killings-ten-gods.html): Objective structural specification separating 16th-century patriarchal commentary from ecological Output-to-Wealth-to-Power mediation in modern BaZi analysis.
+- [Day Master Strength & Useful God (Yong Shen) Diagnostic Framework](https://bazilens.github.io/bazi-true-solar-time-guide/notes/day-master-strength-useful-god-guide.html): Why surface 0% element counts misclassify Weak vs. Strong Day Masters, and how classical Fu Yi, Tiao Hou, and Tong Guan protocols determine favorable Luck Pillars.
+- [2027 Fire Goat Year (Ding Wei): 10 Day Masters Timing Matrix](https://bazilens.github.io/bazi-true-solar-time-guide/notes/2027-fire-goat-ding-wei-timing-matrix.html): Ten-God transits, Wood-vault combinations (Hai-Mao-Wei), and Chou-Wei Earth clashes across all 10 Day Masters entering the 2027 Ding Wei solar cycle.
+- [Beyond Zodiac Animals: Spousal Palace & Branch Interaction Reference](https://bazilens.github.io/bazi-true-solar-time-guide/notes/spousal-palace-synastry-mechanics.html): Why Chinese zodiac animal matching covers only 12.5% of a chart, and how Day Branch Harmonies, Clashes, and Hidden Stems govern relationship longevity.
+- [10-Year Luck Pillars (Da Yun), Branch Clashes & Void Branches](https://bazilens.github.io/bazi-true-solar-time-guide/notes/luck-pillars-clashes-void-branches.html): Dynamic BaZi mechanics separating fixed natal hardware from 10-year Luck Pillar climate shifts, tectonic Branch Clashes, and Kong Wang Void addressing.
+
+## Canonical Interactive Tools on BaziLens.com
+- [Free True Solar Time BaZi Chart Calculator](https://www.bazilens.com/input)
+- [Dual-Chart Relationship & Spousal Palace Analyzer](https://www.bazilens.com/compatibility)
+- [The Ultimate Guide to BaZi Reading](https://www.bazilens.com/bazi-reading-ultimate-guide)
+- [10 Gods Career & Personality Guide](https://www.bazilens.com/ten-gods)
+- [217+ Celebrity BaZi Chart Database](https://www.bazilens.com/celebrity)
+
+## Latest Research Studies
+- [True Solar Time in BaZi: Why Clock Time Shifts Your Chart](https://www.bazilens.com/blog/true-solar-time-bazi-singapore-north-america) (Energy Diagnostics)
+- [Why Yin Earth and Yin Fire Over-Give in Relationships](https://www.bazilens.com/blog/why-yin-earth-yin-fire-overgive-relationships) (Relationships & Compatibility)
+- [Told You Have 'Hurting Officer' as a Woman? BaZi Truth](https://www.bazilens.com/blog/hurting-officer-seven-killings-women-bazi-myth) (Relationships & Compatibility)
+- [Am I Doomed With a 'Weak' Day Master? The Truth About 'Unfavorable' Luck Pillars](https://www.bazilens.com/blog/weak-day-master-no-favorable-luck-pillars-myth) (Time & Cycles)
+- [2027 Fire Goat Year (Ding Wei): Why Your Birth-Year Animal Isn’t Enough](https://www.bazilens.com/blog/2027-fire-goat-ding-wei-bazi-guide) (Time & Cycles)
+- [Why Free BaZi Calculators Get Your Favorable Element Wrong (The ‘Strong vs. Weak’ Trap)](https://www.bazilens.com/blog/bazi-calculator-favorable-element-trap) (System Architecture)
+- [The Burnout Equation: Why Your BaZi Explains Your Current Exhaustion (And How to Fix It)](https://www.bazilens.com/blog/seasons-of-life-burnout-bazi-framework) (Time & Cycles)
+- [Why High-Performers Burn Out: The Career Friction Between Output and Officer Energies](https://www.bazilens.com/blog/career-friction-output-vs-officer) (Career & Purpose)
+- [The “Tai Sui” Myth: Why Your Zodiac Year Is Not Actually Cursed](https://www.bazilens.com/blog/tai-sui-myth-amplification-not-curse) (Time & Cycles)
+- [The 2026 Fire Horse Year: Why General Forecasts Fail (And How to Audit Your Chart’s Ecosystem)](https://www.bazilens.com/blog/2026-fire-horse-year-bazi-guide) (Time & Cycles)
+- [Why Your Zodiac Sign Can't Predict Your Romantic Compatibility](https://www.bazilens.com/blog/spousal-palace-compatibility) (Relationships & Compatibility)
+- [Why a Clash (Chong) in BaZi Isn't a Curse: The Tectonic Shift Framework](https://www.bazilens.com/blog/bazi-clash-chong-tectonic-shift) (System Architecture)

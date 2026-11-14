@@ -4,6 +4,7 @@ An open reference specification explaining why **Astronomical True Solar Time (�
 
 - **Live Reference Calculator**: [BaziLens Free True Solar Time BaZi Calculator](https://www.bazilens.com/input)
 - **Web Whitepaper Edition**: [https://bazilens.github.io/bazi-true-solar-time-guide/](https://bazilens.github.io/bazi-true-solar-time-guide/)
+- **Synchronized Research Index (57 Studies)**: [https://bazilens.github.io/bazi-true-solar-time-guide/research-index.html](https://bazilens.github.io/bazi-true-solar-time-guide/research-index.html)
 - **Complete Foundation Manual**: [The Ultimate Guide to BaZi Reading](https://www.bazilens.com/bazi-reading-ultimate-guide)
 
 ---
@@ -14,7 +15,7 @@ Classical BaZi divides the solar day into **twelve 2-hour Earthly Branch interva
 
 Modern civil clocks do **not** measure local solar time. Instead, they introduce three layers of distortion:
 
-1. **Political Time-Zone Width Offset**: Standard time zones span `15°` of longitude (1 hour), and some jurisdictions span far more (e.g., China uses a single `UTC+8` meridian at `120°E` across five geographical time zones; western Spain and France use `CET` at `15°E` despite sitting near `0°` or west of Greenwich). Every **`1°` of longitude** shifts solar noon by **4 minutes**.
+1. **Political Time-Zone Width Offset**: Standard time zones span `15°` of longitude (1 hour), and some jurisdictions span far more (e.g., China uses a single `UTC+8` meridian at `120°E` across five geographical time zones; Singapore uses `UTC+8` despite sitting at `103.8°E`; western Spain and France use `CET` at `15°E` despite sitting near `0°` or west of Greenwich). Every **`1°` of longitude** shifts solar noon by **4 minutes**.
 2. **Daylight Saving Time (DST / Summer Time)**: Artificial `+60 minute` civil clock shifts have zero astronomical reality. If not stripped prior to longitude calibration, DST shifts half of all births into an adjacent 2-hour Earthly Branch.
 3. **The Equation of Time (EoT)**: Because Earth's orbit is elliptical (`e ≈ 0.0167`) and its axis is tilted (`23.44°`), true solar days vary throughout the year between **-14.2 minutes (mid-February)** and **+16.4 minutes (early November)**.
 
@@ -32,8 +33,8 @@ True Solar Time = Standard Civil Time
 - Suppose a person is born at **`13:30` local clock time** on July 15 in Madrid.
 - An uncalibrated calculator reads `13:30` directly as **Wei (Goat) Hour (`13:00–14:59`)**.
 - **True Solar Time calibration**:
-  1. Strip DST (`-60 min`) → `12:30` CET (`15°E` reference meridian? Note: CET `UTC+1` corresponds to `15°E`, so stripping DST from `UTC+2` to `UTC+0` solar reference or subtracting `(15° - (-3.70°)) × 4 min = 74.8 min` from `12:30` gives `11:15`, plus July 15 EoT `-5.8 min` = **`11:09` True Solar Time**!).
-  2. Total civil distortion is **-2 hours 21 minutes**! The person was actually born at **`11:09` Solar Time — Wu (Horse) Hour (`11:00–12:59`)**, a completely different Hour Pillar!
+  1. Strip DST (`-60 min`) → `12:30` CET (`15°E` reference meridian). Subtracting `(15° - (-3.70°)) × 4 min = 74.8 min` gives `11:15`, plus July 15 EoT `-5.8 min` = **`11:09` True Solar Time**.
+  2. Total civil distortion is **-2 hours 21 minutes**. The person was actually born at **`11:09` Solar Time — Wu (Horse) Hour (`11:00–12:59`)**, a completely different Hour Pillar.
 
 ---
 
@@ -47,13 +48,26 @@ True Solar Time = Standard Civil Time
 | **Five Elements Scoring** | Naive surface count (`0–8` visible characters) | Weighs **Month Branch seasonal command (*Yue Ling*)** + **Hidden Stems (*Cang Gan*)** |
 | **Favorable Element (*Yong Shen*)** | Simplistic *"add whatever element is 0%"* rule | Evaluates **Structural Strength (*Fu Yi*)** + **Climate Regulation (*Tiao Hou*)** + **Bridge (*Tong Guan*)** |
 
-For a full breakdown of why naive element-counting misdiagnoses charts, read:
-- [Why Free BaZi Calculators Get Your Favorable Element Wrong (The 'Strong vs. Weak' Trap)](https://www.bazilens.com/blog/bazi-calculator-favorable-element-trap)
-- [The Missing Element Fallacy: Why Having 0% of an Element Is a Feature, Not a Bug](https://www.bazilens.com/blog/missing-element-fallacy)
+---
+
+## 3. Open Reference Notes & Empirical Index
+
+- **Energy Diagnostics**: [True Solar Time Offset Reference: Singapore, Hawaii & North America](https://bazilens.github.io/bazi-true-solar-time-guide/notes/true-solar-time-singapore-north-america.html) · [Full Case Study](https://www.bazilens.com/blog/true-solar-time-bazi-singapore-north-america)
+- **Relationships & Compatibility**: [Ji Earth & Ding Fire Spousal Palace Directional Flow Matrix](https://bazilens.github.io/bazi-true-solar-time-guide/notes/yin-earth-yin-fire-spousal-palace.html) · [Full Case Study](https://www.bazilens.com/blog/why-yin-earth-yin-fire-overgive-relationships)
+- **Relationships & Compatibility**: [Hurting Officer (Shang Guan) & Seven Killings (Qi Sha) Mechanics](https://bazilens.github.io/bazi-true-solar-time-guide/notes/hurting-officer-seven-killings-ten-gods.html) · [Full Case Study](https://www.bazilens.com/blog/hurting-officer-seven-killings-women-bazi-myth)
+- **System Architecture**: [Day Master Strength & Useful God (Yong Shen) Diagnostic Framework](https://bazilens.github.io/bazi-true-solar-time-guide/notes/day-master-strength-useful-god-guide.html) · [Full Case Study](https://www.bazilens.com/blog/bazi-calculator-favorable-element-trap)
+- **Time & Cycles**: [2027 Fire Goat Year (Ding Wei): 10 Day Masters Timing Matrix](https://bazilens.github.io/bazi-true-solar-time-guide/notes/2027-fire-goat-ding-wei-timing-matrix.html) · [Full Case Study](https://www.bazilens.com/blog/2027-fire-goat-ding-wei-bazi-guide)
+- **Relationships & Compatibility**: [Beyond Zodiac Animals: Spousal Palace & Branch Interaction Reference](https://bazilens.github.io/bazi-true-solar-time-guide/notes/spousal-palace-synastry-mechanics.html) · [Full Case Study](https://www.bazilens.com/blog/spousal-palace-compatibility)
+- **Time & Cycles**: [10-Year Luck Pillars (Da Yun), Branch Clashes & Void Branches](https://bazilens.github.io/bazi-true-solar-time-guide/notes/luck-pillars-clashes-void-branches.html) · [Full Case Study](https://www.bazilens.com/blog/luck-pillars-climate)
+
+### Latest Empirical Research Monographs
+- [True Solar Time in BaZi: Why Clock Time Shifts Your Chart](https://www.bazilens.com/blog/true-solar-time-bazi-singapore-north-america)
+- [Why Yin Earth and Yin Fire Over-Give in Relationships](https://www.bazilens.com/blog/why-yin-earth-yin-fire-overgive-relationships)
+- [Told You Have 'Hurting Officer' as a Woman? BaZi Truth](https://www.bazilens.com/blog/hurting-officer-seven-killings-women-bazi-myth)
 
 ---
 
-## 3. The 12 Two-Hour Solar Branches (*ShiChen* / 时辰)
+## 4. The 12 Two-Hour Solar Branches (*ShiChen* / 时辰)
 
 | Branch | Pinyin | Solar Window | Associated Animal | Primary Element | Hidden Stems (*Cang Gan*) |
 |:---|:---|:---|:---|:---|:---|
@@ -72,9 +86,7 @@ For a full breakdown of why naive element-counting misdiagnoses charts, read:
 
 ---
 
-## 4. The 10 Day Masters (*Ri Zhu* / 日主) Reference
-
-Your **Day Master** is the Heavenly Stem of your **Day Pillar**—not your birth-year animal. While the Year Pillar represents ancestral background and outer social perimeter, the Day Pillar represents your core identity (`Day Stem`) and your **Spouse / Intimate Relationship Palace (`Day Branch`)**.
+## 5. The 10 Day Masters (*Ri Zhu* / 日主) Reference
 
 | Day Master | Polarity & Element | Classical Nature Archetype | Core Strengths | Common Stress Pattern |
 |:---|:---|:---|:---|:---|
@@ -88,16 +100,6 @@ Your **Day Master** is the Heavenly Stem of your **Day Pillar**—not your birth
 | **Xin (辛)** | Yin Metal | Cut Gemstone & Frost | High aesthetic standards, articulate nuance, discernment | Perfectionism and sensitivity to harsh criticism or pressure |
 | **Ren (壬)** | Yang Water | Ocean & Rushing River | Macro strategy, boundless adaptability, entrepreneurial drive | Restlessness and scattered focus without Wu Earth levees |
 | **Gui (癸)** | Yin Water | Morning Dew & Rain Cloud | Quiet intuition, deep empathy, subtle strategic timing | Emotional overwhelm in overly arid or turbulent cycles |
-
----
-
-## 5. Selected Research & Case Studies
-
-- **Day Master & Luck Pillars**: [Am I Doomed With a 'Weak' Day Master? The Truth About 'Unfavorable' Luck Pillars](https://www.bazilens.com/blog/weak-day-master-no-favorable-luck-pillars-myth)
-- **Relationship & Spouse Palace Mechanics**: [Why Your Zodiac Sign Can't Predict Your Romantic Compatibility](https://www.bazilens.com/blog/spousal-palace-compatibility) · [Test Dual-Chart Compatibility](https://www.bazilens.com/compatibility)
-- **Hidden Stems & Seasonal Command**: [Why Your Chart Season Dictates Your Survival (And the Secret of Hidden Stems)](https://www.bazilens.com/blog/hidden-stems-season)
-- **Earthly Branch Clashes (*Chong*)**: [Why a Clash in BaZi Isn't a Curse: The Tectonic Shift Framework](https://www.bazilens.com/blog/bazi-clash-chong-tectonic-shift)
-- **Annual Cycle Transitions (2026–2027)**: [2026 Fire Horse (*Bing Wu*) Guide](https://www.bazilens.com/bazi-2026-forecast) · [2027 Fire Goat (*Ding Wei*) BaZi Guide](https://www.bazilens.com/blog/2027-fire-goat-ding-wei-bazi-guide)
 
 ---
 

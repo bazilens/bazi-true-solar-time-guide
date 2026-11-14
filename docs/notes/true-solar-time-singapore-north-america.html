@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>True Solar Time Offset Table: Singapore &amp; North America | BaZi</title>
+  <meta name="description" content="Quantitative longitude, Daylight Saving Time, and Equation of Time offsets across 8 global cities explaining BaZi Hour Pillar and 23:00 Day Pillar shifts." />
+  <link rel="canonical" href="https://bazilens.github.io/bazi-true-solar-time-guide/notes/true-solar-time-singapore-north-america.html" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="True Solar Time Offset Table: Singapore &amp; North America | BaZi" />
+  <meta property="og:description" content="Quantitative longitude, Daylight Saving Time, and Equation of Time offsets across 8 global cities explaining BaZi Hour Pillar and 23:00 Day Pillar shifts." />
+  <meta property="og:url" content="https://bazilens.github.io/bazi-true-solar-time-guide/notes/true-solar-time-singapore-north-america.html" />
+  <link rel="stylesheet" href="../assets/style.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "True Solar Time Offset Reference: Singapore, Hawaii & North America",
+    "description": "Quantitative longitude, Daylight Saving Time, and Equation of Time offsets across 8 global cities explaining BaZi Hour Pillar and 23:00 Day Pillar shifts.",
+    "dateModified": "2026-11-14",
+    "author": {
+      "@type": "Person",
+      "name": "Thomas",
+      "url": "https://www.bazilens.com"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "BaziLens",
+      "url": "https://www.bazilens.com"
+    },
+    "mainEntityOfPage": "https://bazilens.github.io/bazi-true-solar-time-guide/notes/true-solar-time-singapore-north-america.html"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Specification Home",
+        "item": "https://bazilens.github.io/bazi-true-solar-time-guide/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "True Solar Time Offset Reference: Singapore, Hawaii & North America",
+        "item": "https://bazilens.github.io/bazi-true-solar-time-guide/notes/true-solar-time-singapore-north-america.html"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Should I manually subtract 60 minutes for Daylight Saving Time before running a BaZi calculator?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. When using a location-aware calculator like BaziLens, enter exact hospital clock time and birth city so historical IANA DST rules and longitude are calibrated once without double-subtraction."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why does Singapore clock time differ from True Solar Time by ~65 minutes?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Singapore sits at 103.8 degrees East (closer to UTC+7) while observing UTC+8 anchored at 120 degrees East, creating a permanent -64.7 minute longitude offset compounded by the seasonal Equation of Time."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can a 60-minute True Solar Time correction change my BaZi Day Master?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Births recorded between 23:00 and 00:30 local clock time often pull back across the 23:00 Zi hour boundary into the preceding solar day, restoring the true Day Stem and Day Branch."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-inner">
+      <a class="brand" href="../index.html">
+        <span class="brand-dot"></span>
+        <span>BaZi Open Spec</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary Navigation">
+        <a href="../index.html" class="">Specification</a>
+        <a href="../index.html#reference-notes" class="active">Reference Notes</a>
+        <a href="../research-index.html" class="">Research Index</a>
+        <a class="nav-cta" href="https://www.bazilens.com/input">Open Calculator &rarr;</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="breadcrumbs"><a href="../index.html">Specification Home</a> / <a href="../research-index.html">Research Index</a> / Energy Diagnostics</div>
+    <div class="eyebrow">Astronomical Timing Reference</div>
+    <h1>True Solar Time Offset Reference: Singapore, Hawaii &amp; North America</h1>
+    <p class="lead">Quantitative longitude, Daylight Saving Time, and Equation of Time offsets across 8 global cities explaining BaZi Hour Pillar and 23:00 Day Pillar shifts.</p>
+    <div class="callout"><strong>Primary Companion Case Study:</strong> <a href="https://www.bazilens.com/blog/true-solar-time-bazi-singapore-north-america">True Solar Time in BaZi: Why Clock Time Shifts Your Chart</a> &mdash; Born in Singapore, Vancouver, Honolulu, or the US? Learn how political time zones and Daylight Saving Time shift your BaZi Hour and Day Pillars by 60+ mins.</div>
+
+
+    <h2>1. City-Level Meridian &amp; DST Distortion Matrix</h2>
+    <p>
+      In classical Four Pillars of Destiny (BaZi), Earthly Branch hour windows switch on <strong>odd hours</strong> (<code>01:00</code>, <code>03:00</code>, ..., <code>23:00</code>) measured by local solar position rather than political wall clocks. Total astronomical deviation equals <code>-DST + 4 min &times; (Local_Longitude - Standard_Meridian) + Equation_of_Time</code>.
+    </p>
+    <div class="table-scroll">
+      <table>
+        <thead>
+          <tr>
+            <th>Birth City</th>
+            <th>Coordinates</th>
+            <th>Zone Meridian</th>
+            <th>Base Longitude Shift</th>
+            <th>DST Era / Peak Total Offset</th>
+            <th>Boundary Window at Risk</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Singapore</strong></td>
+            <td><code>103.82&deg; E</code></td>
+            <td><code>120&deg; E</code> (post-1982 UTC+8)</td>
+            <td><code>-64.7 min</code></td>
+            <td>No DST &middot; Peak <code>-78.9 min</code> (Feb)</td>
+            <td><code>:00 – :19</code> past any even hour</td>
+          </tr>
+          <tr>
+            <td><strong>Kuala Lumpur</strong></td>
+            <td><code>101.69&deg; E</code></td>
+            <td><code>120&deg; E</code> (post-1982 UTC+8)</td>
+            <td><code>-73.3 min</code></td>
+            <td>No DST &middot; Peak <code>-87.5 min</code> (Feb)</td>
+            <td><code>:00 – :27</code> past any even hour</td>
+          </tr>
+          <tr>
+            <td><strong>Honolulu</strong></td>
+            <td><code>157.86&deg; W</code></td>
+            <td><code>150&deg; W</code> (HST UTC-10)</td>
+            <td><code>-31.4 min</code></td>
+            <td>No DST &middot; Peak <code>-45.6 min</code> (Feb)</td>
+            <td><code>:00 – :45</code> past odd hours</td>
+          </tr>
+          <tr>
+            <td><strong>Vancouver</strong></td>
+            <td><code>123.12&deg; W</code></td>
+            <td><code>120&deg; W</code> (PST/PDT)</td>
+            <td><code>-12.5 min</code></td>
+            <td><code>-60 min</code> DST &middot; Peak <code>-86.7 min</code></td>
+            <td>Summer births up to <code>86 min</code> after odd hour</td>
+          </tr>
+          <tr>
+            <td><strong>San Francisco</strong></td>
+            <td><code>122.42&deg; W</code></td>
+            <td><code>120&deg; W</code> (PST/PDT)</td>
+            <td><code>-9.7 min</code></td>
+            <td><code>-60 min</code> DST &middot; Peak <code>-83.9 min</code></td>
+            <td>Summer births up to <code>84 min</code> after odd hour</td>
+          </tr>
+          <tr>
+            <td><strong>Toronto</strong></td>
+            <td><code>79.38&deg; W</code></td>
+            <td><code>75&deg; W</code> (EST/EDT)</td>
+            <td><code>-17.5 min</code></td>
+            <td><code>-60 min</code> DST &middot; Peak <code>-91.7 min</code></td>
+            <td>Summer births up to <code>92 min</code> after odd hour</td>
+          </tr>
+          <tr>
+            <td><strong>Atlanta</strong></td>
+            <td><code>84.39&deg; W</code></td>
+            <td><code>75&deg; W</code> (EST/EDT)</td>
+            <td><code>-37.6 min</code></td>
+            <td><code>-60 min</code> DST &middot; Peak <code>-111.8 min</code></td>
+            <td>Nearly full 2-hour branch lag in summer</td>
+          </tr>
+          <tr>
+            <td><strong>Madrid</strong></td>
+            <td><code>3.70&deg; W</code></td>
+            <td><code>15&deg; E</code> (CET/CEST)</td>
+            <td><code>-74.8 min</code></td>
+            <td><code>-60 min</code> DST &middot; Peak <code>-149 min</code></td>
+            <td>Frequently shifts back 1 full Hour Branch</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>2. Odd-Hour &amp; Midnight Rat (Zi) Boundary Protocol</h2>
+    <ul>
+      <li><strong>Hour Pillar Sensitivity:</strong> Any Singapore birth between <code>13:00</code> and <code>14:18</code> clock time maps astronomically before <code>13:00</code>—turning an apparent <em>Wei</em> (Goat) hour into a <em>Wu</em> (Horse) hour.</li>
+      <li><strong>Day Pillar Inversion (23:00 – 00:59):</strong> Calculators operating on uncalibrated wall time advance the Day Stem at <code>23:00</code> clock time. When True Solar Time pulls a <code>23:32</code> Singapore birth back to <code>22:18</code> <em>Hai</em> hour, both the Hour Pillar and Day Master revert to the previous solar day.</li>
+      <li><strong>Equation of Time Range:</strong> Maximum backward shift occurs in mid-February (<code>-14.2 min</code>); maximum forward acceleration occurs in early November (<code>+16.4 min</code>).</li>
+    </ul>
+
+    <div class="callout">
+      <strong>Full Empirical Walkthrough:</strong> Read the complete Singapore &amp; North America case analysis on <a href="https://www.bazilens.com/blog/true-solar-time-bazi-singapore-north-america">True Solar Time in BaZi: Why Clock Time Shifts Your Chart</a>, or inspect how a shifted Hour Pillar altered life diagnosis in <a href="https://www.bazilens.com/blog/missing-hour-pillar-aha-moment-ji-earth">The Missing Hour Pillar Case Study</a>.
+    </div>
+
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-item">
+      <h3>Should I manually subtract 60 minutes for Daylight Saving Time before running a BaZi calculator?</h3>
+      <p>No. When using a location-aware calculator like BaziLens, enter exact hospital clock time and birth city so historical IANA DST rules and longitude are calibrated once without double-subtraction.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Why does Singapore clock time differ from True Solar Time by ~65 minutes?</h3>
+      <p>Singapore sits at 103.8 degrees East (closer to UTC+7) while observing UTC+8 anchored at 120 degrees East, creating a permanent -64.7 minute longitude offset compounded by the seasonal Equation of Time.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Can a 60-minute True Solar Time correction change my BaZi Day Master?</h3>
+      <p>Yes. Births recorded between 23:00 and 00:30 local clock time often pull back across the 23:00 Zi hour boundary into the preceding solar day, restoring the true Day Stem and Day Branch.</p>
+    </div>
+
+    <h2>Related Open Reference Notes</h2>
+    <ul>
+      <li><a href="./yin-earth-yin-fire-spousal-palace.html">Ji Earth &amp; Ding Fire Spousal Palace Directional Flow Matrix</a></li>
+      <li><a href="./hurting-officer-seven-killings-ten-gods.html">Hurting Officer (Shang Guan) &amp; Seven Killings (Qi Sha) Mechanics</a></li>
+      <li><a href="./day-master-strength-useful-god-guide.html">Day Master Strength &amp; Useful God (Yong Shen) Diagnostic Framework</a></li>
+      <li><a href="../research-index.html">Browse Complete Research Index (57 Studies)</a></li>
+    </ul>
+
+    <div class="cta-box">
+      <h3>Calculate Your Astronomical Four Pillars Chart</h3>
+      <p>
+        Apply exact city longitude calibration, Equation of Time correction, Hidden Stems (<em>Cang Gan</em>), and 10-year Luck Pillar timing automatically.
+      </p>
+      <div class="cta-actions">
+        <a class="btn" href="https://www.bazilens.com/input">Open Free BaZi Calculator &rarr;</a>
+        <a class="btn-secondary" href="https://www.bazilens.com/compatibility">Compare Relationship Charts</a>
+      </div>
+    </div>
+
+    <footer>
+      <span>Maintained by <strong>Thomas</strong> &middot; Last synced 2026-11-14 &middot; <a href="https://www.bazilens.com">BaziLens.com</a></span>
+      <span><a href="../research-index.html">Empirical Index</a> &middot; <a href="https://github.com/bazilens/bazi-true-solar-time-guide">GitHub Source</a> &middot; <a href="https://www.bazilens.com/bazi-reading-ultimate-guide">Ultimate Manual</a></span>
+    </footer>
+  </main>
+</body>
+</html>

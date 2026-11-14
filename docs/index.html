@@ -3,15 +3,41 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Astronomical True Solar Time &amp; BaZi (Four Pillars) Calculation Specification</title>
-  <meta name="description" content="Open technical reference explaining Astronomical True Solar Time calibration, the Equation of Time, 24 Solar Terms (JieQi), and the 10 Day Masters in classical BaZi calculation." />
+  <title>Astronomical True Solar Time &amp; BaZi Calculation Guide | BaziLens</title>
+  <meta name="description" content="Open technical reference explaining Astronomical True Solar Time calibration, the Equation of Time, 24 Solar Terms, 10 Day Masters, and empirical BaZi research." />
   <link rel="canonical" href="https://bazilens.github.io/bazi-true-solar-time-guide/" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Astronomical True Solar Time &amp; BaZi Calculation Guide | BaziLens" />
+  <meta property="og:description" content="Open technical reference explaining Astronomical True Solar Time calibration, the Equation of Time, 24 Solar Terms, 10 Day Masters, and empirical BaZi research." />
+  <meta property="og:url" content="https://bazilens.github.io/bazi-true-solar-time-guide/" />
+  <link rel="stylesheet" href="./assets/style.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "BaziLens Open BaZi Specification",
+    "url": "https://bazilens.github.io/bazi-true-solar-time-guide/",
+    "publisher": {
+      "@type": "Organization",
+      "name": "BaziLens",
+      "url": "https://www.bazilens.com",
+      "sameAs": [
+        "https://www.bazilens.com",
+        "https://github.com/bazilens",
+        "https://medium.com/@bazilens",
+        "https://substack.com/@bazilens",
+        "https://www.reddit.com/r/chineseastrology/",
+        "https://www.reddit.com/r/ChineseZodiac/"
+      ]
+    }
+  }
+  </script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Astronomical True Solar Time & Four Pillars (BaZi) Calculation Specification",
-    "description": "Why astronomical True Solar Time calibration, 24 Solar Terms (JieQi), and seasonal ecosystem weighting are required for accurate Four Pillars of Destiny (BaZi) charts.",
+    "description": "Open technical reference explaining Astronomical True Solar Time calibration, the Equation of Time, 24 Solar Terms (JieQi), Hidden Stems, and empirical BaZi chart architecture.",
     "author": {
       "@type": "Person",
       "name": "Thomas",
@@ -22,133 +48,36 @@
       "name": "BaziLens",
       "url": "https://www.bazilens.com"
     },
+    "dateModified": "2026-11-14",
     "mainEntityOfPage": "https://bazilens.github.io/bazi-true-solar-time-guide/"
   }
   </script>
-  <style>
-    :root {
-      --bg: #0c0d10;
-      --surface: #15171e;
-      --border: #262936;
-      --text: #e6e8ee;
-      --muted: #9ca3b4;
-      --gold: #d4af37;
-      --gold-soft: rgba(212, 175, 55, 0.14);
-    }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.7;
-      padding: 0 1.25rem 4rem;
-    }
-    main {
-      max-width: 860px;
-      margin: 0 auto;
-      padding-top: 3.5rem;
-    }
-    .eyebrow {
-      color: var(--gold);
-      font-size: 0.8rem;
-      letter-spacing: 0.16em;
-      text-transform: uppercase;
-      font-weight: 600;
-    }
-    h1 {
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: clamp(2rem, 4vw, 2.8rem);
-      line-height: 1.2;
-      margin: 0.6rem 0 1rem;
-      color: #fff;
-    }
-    h2 {
-      font-family: Georgia, "Times New Roman", serif;
-      color: var(--gold);
-      margin-top: 2.75rem;
-      border-bottom: 1px solid var(--border);
-      padding-bottom: 0.5rem;
-    }
-    p, li { color: var(--text); }
-    .lead { color: var(--muted); font-size: 1.1rem; }
-    a { color: var(--gold); text-decoration: underline; text-underline-offset: 3px; }
-    a:hover { opacity: 0.85; }
-    .callout {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-left: 3px solid var(--gold);
-      border-radius: 10px;
-      padding: 1.25rem 1.5rem;
-      margin: 1.75rem 0;
-    }
-    pre {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      padding: 1rem 1.25rem;
-      overflow-x: auto;
-      font-size: 0.9rem;
-      color: #f4e3a4;
-    }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin: 1.5rem 0;
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      overflow: hidden;
-      font-size: 0.92rem;
-    }
-    th, td {
-      text-align: left;
-      padding: 0.75rem 1rem;
-      border-bottom: 1px solid var(--border);
-      vertical-align: top;
-    }
-    th {
-      background: var(--gold-soft);
-      color: var(--gold);
-      font-weight: 600;
-    }
-    .cta-box {
-      margin-top: 3rem;
-      padding: 2rem;
-      border-radius: 14px;
-      background: linear-gradient(135deg, rgba(212,175,55,0.14), rgba(21,23,30,0.95));
-      border: 1px solid rgba(212,175,55,0.35);
-      text-align: center;
-    }
-    .btn {
-      display: inline-block;
-      margin-top: 0.75rem;
-      padding: 0.8rem 1.6rem;
-      background: var(--gold);
-      color: #0c0d10;
-      font-weight: 700;
-      text-decoration: none;
-      border-radius: 8px;
-    }
-    footer {
-      margin-top: 3.5rem;
-      padding-top: 1.5rem;
-      border-top: 1px solid var(--border);
-      font-size: 0.85rem;
-      color: var(--muted);
-    }
-  </style>
 </head>
 <body>
+  <header class="site-header">
+    <div class="nav-inner">
+      <a class="brand" href="./index.html">
+        <span class="brand-dot"></span>
+        <span>BaZi Open Spec</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary Navigation">
+        <a href="./index.html" class="active">Specification</a>
+        <a href="./index.html#reference-notes" class="">Reference Notes</a>
+        <a href="./research-index.html" class="">Research Index</a>
+        <a class="nav-cta" href="https://www.bazilens.com/input">Open Calculator &rarr;</a>
+      </nav>
+    </div>
+  </header>
+
   <main>
     <div class="eyebrow">Open Metaphysics &amp; Astro-Math Specification</div>
     <h1>Astronomical True Solar Time &amp; Four Pillars (BaZi) Calculation Guide</h1>
     <p class="lead">
-      Why standard political time zones and Daylight Saving Time distort classical Chinese Four Pillars of Destiny (<em>BaZi</em> / 八字) charts—and how astronomical longitude and Equation of Time calibration restores structural accuracy.
+      Why standard political time zones and Daylight Saving Time distort classical Chinese Four Pillars of Destiny (<em>BaZi</em>) charts—and how astronomical longitude, Equation of Time, and 24 Solar Terms (<em>JieQi</em>) calibration restores structural accuracy across <strong>57 empirical case studies</strong>.
     </p>
 
     <div class="callout">
-      <strong>Interactive Reference Implementation:</strong> Test astronomical True Solar Time calibration, Hidden Stems, and 10-year Luck Pillars free at <a href="https://www.bazilens.com/input">BaziLens BaZi Calculator</a>, or explore the full <a href="https://www.bazilens.com/bazi-reading-ultimate-guide">Ultimate Guide to BaZi Reading</a>.
+      <strong>Interactive Reference Implementation:</strong> Test astronomical True Solar Time calibration, Hidden Stems (<em>Cang Gan</em>), and 10-year Luck Pillars free at <a href="https://www.bazilens.com/input">BaziLens BaZi Calculator</a>, or browse all <a href="./research-index.html">57 Empirical BaZi Studies &rarr;</a>
     </div>
 
     <h2>1. The Civil Clock vs. Solar Meridian Problem</h2>
@@ -156,66 +85,253 @@
       Classical BaZi partitions each solar day into twelve two-hour Earthly Branch windows (<em>ShiChen</em>), anchored to <strong>local solar noon</strong>—the exact moment the sun crosses the observer's meridian. Modern wall clocks introduce three compounding errors:
     </p>
     <ul>
-      <li><strong>Time-Zone Longitude Offset:</strong> Every <code>1°</code> difference between birth longitude and the political zone's standard meridian shifts true solar noon by <strong>4 minutes</strong>.</li>
-      <li><strong>Daylight Saving Time (DST):</strong> Artificial <code>+60 minute</code> summer shifts have zero astronomical basis and push ~50% of summer births into the wrong Hour Pillar if unstripped.</li>
+      <li><strong>Time-Zone Longitude Offset:</strong> Every <code>1&deg;</code> difference between birth longitude and the political zone's standard meridian shifts true solar noon by <strong>4 minutes</strong>.</li>
+      <li><strong>Daylight Saving Time (DST):</strong> Artificial <code>+60 minute</code> summer shifts have zero astronomical basis and push roughly half of summer births into the wrong Hour Pillar if unstripped.</li>
       <li><strong>Equation of Time (EoT):</strong> Earth's orbital eccentricity and axial tilt shift solar noon between <code>-14.2 minutes</code> (February) and <code>+16.4 minutes</code> (November).</li>
     </ul>
 
-    <pre>True Solar Time = Civil Clock Time - DST_Offset + 4 min × (Birth_Longitude - Zone_Meridian) + Equation_of_Time(Day)</pre>
+    <pre>True Solar Time = Civil Clock Time - DST_Offset + 4 min &times; (Birth_Longitude - Zone_Meridian) + Equation_of_Time(Day)</pre>
 
     <h2>2. Methodology Comparison: Clock-Time vs. Astronomical BaZi</h2>
-    <table>
-      <thead>
-        <tr>
-          <th>Calculation Layer</th>
-          <th>Generic Free Clock-Time Calculators</th>
-          <th>Calibrated Engine (<a href="https://www.bazilens.com">BaziLens</a>)</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><strong>Astrological Year Switch</strong></td>
-          <td>Often defaults to Lunar New Year (Jan/Feb)</td>
-          <td>Exact <strong>LiChun</strong> (<code>315°</code> solar longitude, ~Feb 4)</td>
-        </tr>
-        <tr>
-          <td><strong>Hour &amp; Day Pillar Timing</strong></td>
-          <td>Raw clock hour (unadjusted for longitude or DST)</td>
-          <td>Historical DST stripped + longitude &amp; Equation of Time calibrated</td>
-        </tr>
-        <tr>
-          <td><strong>Elemental Ecosystem Weight</strong></td>
-          <td>Flat count of 8 surface characters</td>
-          <td>Month Branch seasonal command (<em>Yue Ling</em>) + Hidden Stems (<em>Cang Gan</em>)</td>
-        </tr>
-        <tr>
-          <td><strong>Useful God (<em>Yong Shen</em>)</strong></td>
-          <td>Naive "missing element = lucky element"</td>
-          <td>Structural Balance (<em>Fu Yi</em>) + Seasonal Climate Regulation (<em>Tiao Hou</em>)</td>
-        </tr>
-      </tbody>
-    </table>
+    <div class="table-scroll">
+      <table>
+        <thead>
+          <tr>
+            <th>Calculation Layer</th>
+            <th>Generic Free Clock-Time Calculators</th>
+            <th>Calibrated Engine (<a href="https://www.bazilens.com">BaziLens</a>)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Astrological Year Switch</strong></td>
+            <td>Often defaults to Lunar New Year (Jan/Feb)</td>
+            <td>Exact <strong>LiChun</strong> (<code>315&deg;</code> solar longitude, ~Feb 4)</td>
+          </tr>
+          <tr>
+            <td><strong>Hour &amp; Day Pillar Timing</strong></td>
+            <td>Raw clock hour (unadjusted for longitude or DST)</td>
+            <td>Historical DST stripped + longitude &amp; Equation of Time calibrated</td>
+          </tr>
+          <tr>
+            <td><strong>Elemental Ecosystem Weight</strong></td>
+            <td>Flat count of 8 surface characters</td>
+            <td>Month Branch seasonal command (<em>Yue Ling</em>) + Hidden Stems (<em>Cang Gan</em>)</td>
+          </tr>
+          <tr>
+            <td><strong>Useful God (<em>Yong Shen</em>)</strong></td>
+            <td>Naive "missing element = lucky element"</td>
+            <td>Structural Balance (<em>Fu Yi</em>) + Climate Regulation (<em>Tiao Hou</em>) + Bridge</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
 
-    <h2>3. Essential BaZi Research &amp; Case Studies</h2>
-    <ul>
-      <li><a href="https://www.bazilens.com/blog/bazi-calculator-favorable-element-trap">Why Free BaZi Calculators Get Your Favorable Element Wrong (The 'Strong vs. Weak' Trap)</a></li>
-      <li><a href="https://www.bazilens.com/blog/missing-element-fallacy">The Missing Element Fallacy: Why Having 0% of an Element Is a Feature, Not a Bug</a></li>
-      <li><a href="https://www.bazilens.com/blog/weak-day-master-no-favorable-luck-pillars-myth">Am I Doomed With a 'Weak' Day Master? The Truth About 'Unfavorable' Luck Pillars</a></li>
-      <li><a href="https://www.bazilens.com/blog/spousal-palace-compatibility">Why Your Zodiac Sign Can't Predict Romantic Compatibility (Spouse Palace Mechanics)</a></li>
-      <li><a href="https://www.bazilens.com/blog/2027-fire-goat-ding-wei-bazi-guide">2027 Fire Goat Year (Ding Wei): Why Your Birth-Year Animal Isn't Enough</a></li>
-      <li><a href="https://www.bazilens.com/celebrity">Empirical Database: 217+ Analyzed Celebrity BaZi Charts</a></li>
+    <h2>3. The 12 Two-Hour Solar Branches (<em>ShiChen</em>)</h2>
+    <div class="table-scroll">
+      <table>
+        <thead>
+          <tr>
+            <th>Pinyin</th>
+            <th>Solar Window</th>
+            <th>Zodiac Animal</th>
+            <th>Primary Element</th>
+            <th>Hidden Stems (<em>Cang Gan</em>)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Zi</strong></td><td><code>23:00 – 00:59</code></td><td>Rat</td><td>Water</td><td>Gui</td></tr>
+          <tr><td><strong>Chou</strong></td><td><code>01:00 – 02:59</code></td><td>Ox</td><td>Yin Earth (Wet)</td><td>Ji, Gui, Xin</td></tr>
+          <tr><td><strong>Yin</strong></td><td><code>03:00 – 04:59</code></td><td>Tiger</td><td>Yang Wood</td><td>Jia, Bing, Wu</td></tr>
+          <tr><td><strong>Mao</strong></td><td><code>05:00 – 06:59</code></td><td>Rabbit</td><td>Yin Wood</td><td>Yi</td></tr>
+          <tr><td><strong>Chen</strong></td><td><code>07:00 – 08:59</code></td><td>Dragon</td><td>Yang Earth (Reservoir)</td><td>Wu, Yi, Gui</td></tr>
+          <tr><td><strong>Si</strong></td><td><code>09:00 – 10:59</code></td><td>Snake</td><td>Fire</td><td>Bing, Geng, Wu</td></tr>
+          <tr><td><strong>Wu</strong></td><td><code>11:00 – 12:59</code></td><td>Horse</td><td>Fire</td><td>Ding, Ji</td></tr>
+          <tr><td><strong>Wei</strong></td><td><code>13:00 – 14:59</code></td><td>Goat</td><td>Yin Earth (Dry/Warm)</td><td>Ji, Ding, Yi</td></tr>
+          <tr><td><strong>Shen</strong></td><td><code>15:00 – 16:59</code></td><td>Monkey</td><td>Yang Metal</td><td>Geng, Ren, Wu</td></tr>
+          <tr><td><strong>You</strong></td><td><code>17:00 – 18:59</code></td><td>Rooster</td><td>Yin Metal</td><td>Xin</td></tr>
+          <tr><td><strong>Xu</strong></td><td><code>19:00 – 20:59</code></td><td>Dog</td><td>Yang Earth (Fire Vault)</td><td>Wu, Xin, Ding</td></tr>
+          <tr><td><strong>Hai</strong></td><td><code>21:00 – 22:59</code></td><td>Pig</td><td>Water</td><td>Ren, Jia</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>4. The 10 Day Masters (<em>Ri Zhu</em>) Archetype Table</h2>
+    <div class="table-scroll">
+      <table>
+        <thead>
+          <tr>
+            <th>Day Master</th>
+            <th>Element &amp; Polarity</th>
+            <th>Nature Archetype</th>
+            <th>Core Strength</th>
+            <th>Common Stress Pattern</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Jia</strong></td><td>Yang Wood</td><td>Ancient Forest Tree</td><td>Principled growth, stewardship</td><td>Rigidity under unbuffered Geng Metal clash</td></tr>
+          <tr><td><strong>Yi</strong></td><td>Yin Wood</td><td>Climbing Vine &amp; Wildflower</td><td>Diplomatic adaptability, resilience</td><td>Over-accommodating when support roots thin</td></tr>
+          <tr><td><strong>Bing</strong></td><td>Yang Fire</td><td>Radiant Midday Sun</td><td>Warm clarity, catalytic presence</td><td>Burnout from lighting every room non-stop</td></tr>
+          <tr><td><strong>Ding</strong></td><td>Yin Fire</td><td>Starlight &amp; Hearth Flame</td><td>Focused insight, psychological warmth</td><td>Caretaker fatigue when Jia Wood resource runs low</td></tr>
+          <tr><td><strong>Wu</strong></td><td>Yang Earth</td><td>Granite Mountain Ridge</td><td>Steady containment, crisis poise</td><td>Stagnation without Wood/Water movement</td></tr>
+          <tr><td><strong>Ji</strong></td><td>Yin Earth</td><td>Fertile Garden Soil</td><td>Nurturing synthesis, practical care</td><td>Soaking up partner anxiety into cold mud</td></tr>
+          <tr><td><strong>Geng</strong></td><td>Yang Metal</td><td>Raw Ore &amp; Forged Sword</td><td>Decisive action, structural loyalty</td><td>Blunt friction without Ding Fire refinement</td></tr>
+          <tr><td><strong>Xin</strong></td><td>Yin Metal</td><td>Cut Gemstone &amp; Frost</td><td>Discerning standards, articulate craft</td><td>Perfectionist sensitivity to harsh pressure</td></tr>
+          <tr><td><strong>Ren</strong></td><td>Yang Water</td><td>Ocean &amp; Rushing River</td><td>Macro vision, boundless adaptability</td><td>Restless scattering without Wu Earth banks</td></tr>
+          <tr><td><strong>Gui</strong></td><td>Yin Water</td><td>Morning Dew &amp; Rain Cloud</td><td>Quiet intuition, deep empathy</td><td>Emotional overwhelm in arid or clashing cycles</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2 id="reference-notes">5. Dedicated Technical &amp; Empirical Reference Notes</h2>
+    <p>
+      Each standalone note compiles reference tables, astronomical lookup matrices, and direct empirical monographs on <a href="https://www.bazilens.com/blog">BaziLens.com</a>:
+    </p>
+    <div class="card-grid">
+      <article class="card">
+        <div>
+          <span class="badge">Energy Diagnostics</span>
+          <h3><a href="./notes/true-solar-time-singapore-north-america.html">True Solar Time Offset Reference: Singapore, Hawaii &amp; North America</a></h3>
+          <p>Quantitative longitude, Daylight Saving Time, and Equation of Time offsets across 8 global cities explaining BaZi Hour Pillar and 23:00 Day Pillar shifts.</p>
+        </div>
+        <div class="card-foot">
+          <a href="./notes/true-solar-time-singapore-north-america.html">Open Spec Matrix &rarr;</a>
+          <a href="https://www.bazilens.com/blog/true-solar-time-bazi-singapore-north-america">Case Study on BaziLens</a>
+        </div>
+      </article>
+      <article class="card">
+        <div>
+          <span class="badge">Relationships &amp; Compatibility</span>
+          <h3><a href="./notes/yin-earth-yin-fire-spousal-palace.html">Ji Earth &amp; Ding Fire Spousal Palace Directional Flow Matrix</a></h3>
+          <p>Structural taxonomy of all 12 Ji Earth and Ding Fire Day Pillars, mapping Hidden Stems, Output-drain vs. Resource-supported Spousal Palaces, and ecological rebalancing elements.</p>
+        </div>
+        <div class="card-foot">
+          <a href="./notes/yin-earth-yin-fire-spousal-palace.html">Open Spec Matrix &rarr;</a>
+          <a href="https://www.bazilens.com/blog/why-yin-earth-yin-fire-overgive-relationships">Case Study on BaziLens</a>
+        </div>
+      </article>
+      <article class="card">
+        <div>
+          <span class="badge">Relationships &amp; Compatibility</span>
+          <h3><a href="./notes/hurting-officer-seven-killings-ten-gods.html">Hurting Officer (Shang Guan) &amp; Seven Killings (Qi Sha) Mechanics</a></h3>
+          <p>Objective structural specification separating 16th-century patriarchal commentary from ecological Output-to-Wealth-to-Power mediation in modern BaZi analysis.</p>
+        </div>
+        <div class="card-foot">
+          <a href="./notes/hurting-officer-seven-killings-ten-gods.html">Open Spec Matrix &rarr;</a>
+          <a href="https://www.bazilens.com/blog/hurting-officer-seven-killings-women-bazi-myth">Case Study on BaziLens</a>
+        </div>
+      </article>
+      <article class="card">
+        <div>
+          <span class="badge">System Architecture</span>
+          <h3><a href="./notes/day-master-strength-useful-god-guide.html">Day Master Strength &amp; Useful God (Yong Shen) Diagnostic Framework</a></h3>
+          <p>Why surface 0% element counts misclassify Weak vs. Strong Day Masters, and how classical Fu Yi, Tiao Hou, and Tong Guan protocols determine favorable Luck Pillars.</p>
+        </div>
+        <div class="card-foot">
+          <a href="./notes/day-master-strength-useful-god-guide.html">Open Spec Matrix &rarr;</a>
+          <a href="https://www.bazilens.com/blog/bazi-calculator-favorable-element-trap">Case Study on BaziLens</a>
+        </div>
+      </article>
+      <article class="card">
+        <div>
+          <span class="badge">Time &amp; Cycles</span>
+          <h3><a href="./notes/2027-fire-goat-ding-wei-timing-matrix.html">2027 Fire Goat Year (Ding Wei): 10 Day Masters Timing Matrix</a></h3>
+          <p>Ten-God transits, Wood-vault combinations (Hai-Mao-Wei), and Chou-Wei Earth clashes across all 10 Day Masters entering the 2027 Ding Wei solar cycle.</p>
+        </div>
+        <div class="card-foot">
+          <a href="./notes/2027-fire-goat-ding-wei-timing-matrix.html">Open Spec Matrix &rarr;</a>
+          <a href="https://www.bazilens.com/blog/2027-fire-goat-ding-wei-bazi-guide">Case Study on BaziLens</a>
+        </div>
+      </article>
+      <article class="card">
+        <div>
+          <span class="badge">Relationships &amp; Compatibility</span>
+          <h3><a href="./notes/spousal-palace-synastry-mechanics.html">Beyond Zodiac Animals: Spousal Palace &amp; Branch Interaction Reference</a></h3>
+          <p>Why Chinese zodiac animal matching covers only 12.5% of a chart, and how Day Branch Harmonies, Clashes, and Hidden Stems govern relationship longevity.</p>
+        </div>
+        <div class="card-foot">
+          <a href="./notes/spousal-palace-synastry-mechanics.html">Open Spec Matrix &rarr;</a>
+          <a href="https://www.bazilens.com/blog/spousal-palace-compatibility">Case Study on BaziLens</a>
+        </div>
+      </article>
+      <article class="card">
+        <div>
+          <span class="badge">Time &amp; Cycles</span>
+          <h3><a href="./notes/luck-pillars-clashes-void-branches.html">10-Year Luck Pillars (Da Yun), Branch Clashes &amp; Void Branches</a></h3>
+          <p>Dynamic BaZi mechanics separating fixed natal hardware from 10-year Luck Pillar climate shifts, tectonic Branch Clashes, and Kong Wang Void addressing.</p>
+        </div>
+        <div class="card-foot">
+          <a href="./notes/luck-pillars-clashes-void-branches.html">Open Spec Matrix &rarr;</a>
+          <a href="https://www.bazilens.com/blog/luck-pillars-climate">Case Study on BaziLens</a>
+        </div>
+      </article>
+    </div>
+
+    <h2>6. Latest Published Research on BaziLens (57 Total)</h2>
+    <ul class="study-list">
+      <li class="study-item">
+        <div class="study-item-head">
+          <a class="study-item-title" href="https://www.bazilens.com/blog/true-solar-time-bazi-singapore-north-america">True Solar Time in BaZi: Why Clock Time Shifts Your Chart</a>
+          <span class="study-meta">Energy Diagnostics &middot; 2026-11-14</span>
+        </div>
+        <p class="study-desc">Born in Singapore, Vancouver, Honolulu, or the US? Learn how political time zones and Daylight Saving Time shift your BaZi Hour and Day Pillars by 60+ mins.</p>
+      </li>
+      <li class="study-item">
+        <div class="study-item-head">
+          <a class="study-item-title" href="https://www.bazilens.com/blog/why-yin-earth-yin-fire-overgive-relationships">Why Yin Earth and Yin Fire Over-Give in Relationships</a>
+          <span class="study-meta">Relationships &amp; Compatibility &middot; 2026-11-14</span>
+        </div>
+        <p class="study-desc">Why do Ji Earth and Ding Fire Day Masters absorb every partner's storm? Learn how Spousal Palace friction drives caretaker burnout and how to rebalance.</p>
+      </li>
+      <li class="study-item">
+        <div class="study-item-head">
+          <a class="study-item-title" href="https://www.bazilens.com/blog/hurting-officer-seven-killings-women-bazi-myth">Told You Have 'Hurting Officer' as a Woman? BaZi Truth</a>
+          <span class="study-meta">Relationships &amp; Compatibility &middot; 2026-11-14</span>
+        </div>
+        <p class="study-desc">Told that Hurting Officer or Seven Killings ruins marriage in a woman's BaZi chart? Discover why old Imperial rules misread modern autonomy and love.</p>
+      </li>
+      <li class="study-item">
+        <div class="study-item-head">
+          <a class="study-item-title" href="https://www.bazilens.com/blog/weak-day-master-no-favorable-luck-pillars-myth">Am I Doomed With a 'Weak' Day Master? The Truth About 'Unfavorable' Luck Pillars</a>
+          <span class="study-meta">Time &amp; Cycles &middot; 2026-11-09</span>
+        </div>
+        <p class="study-desc">Terrified by a 'Weak' Day Master or 'no favorable Luck Pillars'? Learn how True Solar Time and split-element decades really work in BaZi.</p>
+      </li>
+      <li class="study-item">
+        <div class="study-item-head">
+          <a class="study-item-title" href="https://www.bazilens.com/blog/2027-fire-goat-ding-wei-bazi-guide">2027 Fire Goat Year (Ding Wei): Why Your Birth-Year Animal Isn’t Enough</a>
+          <span class="study-meta">Time &amp; Cycles &middot; 2026-10-22</span>
+        </div>
+        <p class="study-desc">Worried about 2027 Fire Goat (Ding Wei) warnings for Ox, Goat, Dog, or Rat? Learn why your birth-year animal is only 1 of 8 characters in a full BaZi reading.</p>
+      </li>
+      <li class="study-item">
+        <div class="study-item-head">
+          <a class="study-item-title" href="https://www.bazilens.com/blog/bazi-calculator-favorable-element-trap">Why Free BaZi Calculators Get Your Favorable Element Wrong (The ‘Strong vs. Weak’ Trap)</a>
+          <span class="study-meta">System Architecture &middot; 2026-10-21</span>
+        </div>
+        <p class="study-desc">Why do free online BaZi calculators give conflicting Favorable Elements? Learn the 3-step ecosystem diagnostic to find your true Useful God and balance.</p>
+      </li>
     </ul>
+    <p>
+      <a class="btn-secondary" href="./research-index.html">Browse Complete 57-Study Categorized Index &rarr;</a>
+      &nbsp;&nbsp;
+      <a class="btn-secondary" href="https://www.bazilens.com/celebrity">217+ Analyzed Celebrity Charts &rarr;</a>
+    </p>
 
     <div class="cta-box">
-      <h3 style="margin-top:0;color:#fff;font-family:Georgia,serif;">Calculate Your Calibrated Four Pillars Chart</h3>
-      <p style="color:var(--muted);max-width:560px;margin:0.5rem auto 1rem;">
-        Decode your Day Master, Hidden Stems, Five Elements ecosystem, and 10-year Luck Pillars with astronomical True Solar Time calibration.
+      <h3>Calculate Your Astronomical Four Pillars Chart</h3>
+      <p>
+        Apply exact city longitude calibration, Equation of Time correction, Hidden Stems (<em>Cang Gan</em>), and 10-year Luck Pillar timing automatically.
       </p>
-      <a class="btn" href="https://www.bazilens.com/input">Open Free BaZi Calculator &rarr;</a>
+      <div class="cta-actions">
+        <a class="btn" href="https://www.bazilens.com/input">Open Free BaZi Calculator &rarr;</a>
+        <a class="btn-secondary" href="https://www.bazilens.com/compatibility">Compare Relationship Charts</a>
+      </div>
     </div>
 
     <footer>
-      Maintained by Thomas &middot; <a href="https://www.bazilens.com">BaziLens.com</a> &middot; <a href="https://github.com/bazilens/bazi-true-solar-time-guide">GitHub Source Repository</a> &middot; MIT License
+      <span>Maintained by <strong>Thomas</strong> &middot; Last synced 2026-11-14 &middot; <a href="https://www.bazilens.com">BaziLens.com</a></span>
+      <span><a href="./research-index.html">Empirical Index</a> &middot; <a href="https://github.com/bazilens/bazi-true-solar-time-guide">GitHub Source</a> &middot; <a href="https://www.bazilens.com/bazi-reading-ultimate-guide">Ultimate Manual</a></span>
     </footer>
   </main>
 </body>
