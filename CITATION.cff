@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you reference these open astronomical True Solar Time specifications or lookup tables, please cite them using this metadata."
+title: "Astronomical True Solar Time & Equation of Time Specification for Sexagenary (BaZi) Chronology"
+type: software
+authors:
+  - given-names: "Thomas"
+    affiliation: "BaziLens"
+license: MIT
+url: "https://www.bazilens.com"
+repository-code: "https://github.com/bazilens/bazi-true-solar-time-guide"
+repository-artifact: "https://bazilens.github.io/bazi-true-solar-time-guide/"
+keywords:
+  - "True Solar Time"
+  - "Equation of Time"
+  - "24 Solar Terms"
+  - "Sexagenary Cycle"
+  - "BaZi"
+  - "Four Pillars"

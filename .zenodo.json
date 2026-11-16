@@ -1,0 +1,45 @@
+{
+  "title": "Astronomical True Solar Time & Equation of Time Specification for Sexagenary (BaZi) Chronology",
+  "upload_type": "software",
+  "access_right": "open",
+  "license": "MIT",
+  "creators": [
+    {
+      "name": "Thomas",
+      "affiliation": "BaziLens"
+    }
+  ],
+  "description": "<p>Open reference specification, mathematical formulas, and empirical study index for calibrating civil clock timestamps to Astronomical True Solar Time (Apparent Solar Time) in classical Chinese sexagenary (Four Pillars / BaZi) chronology.</p><p>Covers longitudinal meridian offset correction, orbital eccentricity and axial obliquity (Equation of Time), exact 15-degree solar ecliptic longitude boundaries (24 Solar Terms / JieQi), Hidden Stems (Cang Gan) reference matrices, and 62 indexed empirical case studies maintained at <a href=\"https://www.bazilens.com\">https://www.bazilens.com</a>.</p>",
+  "keywords": [
+    "True Solar Time",
+    "Equation of Time",
+    "Solar Terms",
+    "Sexagenary Cycle",
+    "BaZi",
+    "Four Pillars",
+    "Astronomical Chronology",
+    "BaziLens"
+  ],
+  "related_identifiers": [
+    {
+      "scheme": "url",
+      "identifier": "https://www.bazilens.com",
+      "relation": "isSupplementTo"
+    },
+    {
+      "scheme": "url",
+      "identifier": "https://www.bazilens.com/input",
+      "relation": "isSourceOf"
+    },
+    {
+      "scheme": "url",
+      "identifier": "https://www.bazilens.com/bazi-reading-ultimate-guide",
+      "relation": "isDescribedBy"
+    },
+    {
+      "scheme": "url",
+      "identifier": "https://bazilens.github.io/bazi-true-solar-time-guide/",
+      "relation": "isSupplementedBy"
+    }
+  ]
+}
