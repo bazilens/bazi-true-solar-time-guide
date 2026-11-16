@@ -6,6 +6,7 @@ authors:
   - given-names: "Thomas"
     affiliation: "BaziLens"
 license: MIT
+doi: "10.5281/zenodo.24284920"
 url: "https://www.bazilens.com"
 repository-code: "https://github.com/bazilens/bazi-true-solar-time-guide"
 repository-artifact: "https://bazilens.github.io/bazi-true-solar-time-guide/"

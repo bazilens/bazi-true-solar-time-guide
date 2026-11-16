@@ -1,9 +1,12 @@
 # Astronomical True Solar Time & Four Pillars (BaZi) Calculation Guide
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24284920.svg)](https://doi.org/10.5281/zenodo.24284920)
+
 An open reference specification explaining why **Astronomical True Solar Time (真太阳时)**, **24 Solar Terms (*JieQi* / 二十四节气)**, and **Seasonal Ecosystem Weighting (*Yue Ling* / 月令)** are essential for accurate **BaZi (Four Pillars of Destiny)** chart calculation—and why uncalibrated online calculators misidentify Hour and Day Pillars for a significant share of births.
 
 - **Live Reference Calculator**: [BaziLens Free True Solar Time BaZi Calculator](https://www.bazilens.com/input)
 - **Web Whitepaper Edition**: [https://bazilens.github.io/bazi-true-solar-time-guide/](https://bazilens.github.io/bazi-true-solar-time-guide/)
+- **Permanent Archival DOI (CERN Zenodo)**: [10.5281/zenodo.24284920](https://doi.org/10.5281/zenodo.24284920) ([Record](https://zenodo.org/records/24284920))
 - **Synchronized Research Index (62 Studies)**: [https://bazilens.github.io/bazi-true-solar-time-guide/research-index.html](https://bazilens.github.io/bazi-true-solar-time-guide/research-index.html)
 - **2027 Solar Timing Hub**: [2027 Year of the Fire Goat (Ding Wei) Forecast](https://www.bazilens.com/bazi-2027-forecast)
 - **Complete Foundation Manual**: [The Ultimate Guide to BaZi Reading](https://www.bazilens.com/bazi-reading-ultimate-guide)
