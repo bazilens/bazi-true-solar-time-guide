@@ -7,7 +7,7 @@ An open reference specification explaining why **Astronomical True Solar Time (ç
 - **Live Reference Calculator**: [BaziLens Free True Solar Time BaZi Calculator](https://www.bazilens.com/input)
 - **Web Whitepaper Edition**: [https://bazilens.github.io/bazi-true-solar-time-guide/](https://bazilens.github.io/bazi-true-solar-time-guide/)
 - **Permanent Archival DOI (CERN Zenodo)**: [10.5281/zenodo.24284920](https://doi.org/10.5281/zenodo.24284920) ([Record](https://zenodo.org/records/24284920))
-- **Synchronized Research Index (62 Studies)**: [https://bazilens.github.io/bazi-true-solar-time-guide/research-index.html](https://bazilens.github.io/bazi-true-solar-time-guide/research-index.html)
+- **Synchronized Research Index (63 Studies)**: [https://bazilens.github.io/bazi-true-solar-time-guide/research-index.html](https://bazilens.github.io/bazi-true-solar-time-guide/research-index.html)
 - **2027 Solar Timing Hub**: [2027 Year of the Fire Goat (Ding Wei) Forecast](https://www.bazilens.com/bazi-2027-forecast)
 - **Complete Foundation Manual**: [The Ultimate Guide to BaZi Reading](https://www.bazilens.com/bazi-reading-ultimate-guide)
 
@@ -65,7 +65,7 @@ True Solar Time = Standard Civil Time
 - **Time & Cycles**: [10-Year Luck Pillars (Da Yun), Branch Clashes & Void Branches](https://bazilens.github.io/bazi-true-solar-time-guide/notes/luck-pillars-clashes-void-branches.html) Â· [Full Case Study](https://www.bazilens.com/blog/luck-pillars-climate)
 
 ### Latest Empirical Research Monographs
-- [2027 Fire Goat Forecast for Bing and Ding Fire Charts](https://www.bazilens.com/blog/2027-fire-goat-bing-fire-ding-fire-bazi)
+- [2027 Tai Sui Guide for Ox, Goat, Dog, and Rat Charts](https://www.bazilens.com/blog/2027-tai-sui-ox-goat-dog-rat-bazi-guide)
 - [2027 Fire Goat Forecast for Ren and Gui Water Charts](https://www.bazilens.com/blog/2027-fire-goat-ren-water-gui-water-bazi)
 - [2027 Fire Goat Forecast for Jia and Yi Wood Charts](https://www.bazilens.com/blog/2027-fire-goat-jia-wood-yi-wood-bazi)
 

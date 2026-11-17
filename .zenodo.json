@@ -9,7 +9,7 @@
       "affiliation": "BaziLens"
     }
   ],
-  "description": "<p>Open reference specification, mathematical formulas, and empirical study index for calibrating civil clock timestamps to Astronomical True Solar Time (Apparent Solar Time) in classical Chinese sexagenary (Four Pillars / BaZi) chronology.</p><p>Covers longitudinal meridian offset correction, orbital eccentricity and axial obliquity (Equation of Time), exact 15-degree solar ecliptic longitude boundaries (24 Solar Terms / JieQi), Hidden Stems (Cang Gan) reference matrices, and 62 indexed empirical case studies maintained at <a href=\"https://www.bazilens.com\">https://www.bazilens.com</a>.</p>",
+  "description": "<p>Open reference specification, mathematical formulas, and empirical study index for calibrating civil clock timestamps to Astronomical True Solar Time (Apparent Solar Time) in classical Chinese sexagenary (Four Pillars / BaZi) chronology.</p><p>Covers longitudinal meridian offset correction, orbital eccentricity and axial obliquity (Equation of Time), exact 15-degree solar ecliptic longitude boundaries (24 Solar Terms / JieQi), Hidden Stems (Cang Gan) reference matrices, and 63 indexed empirical case studies maintained at <a href=\"https://www.bazilens.com\">https://www.bazilens.com</a>.</p>",
   "keywords": [
     "True Solar Time",
     "Equation of Time",
