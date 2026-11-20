@@ -4,7 +4,7 @@
 
 ## Core Specification Pages
 - [Astronomical True Solar Time & BaZi Calculation Guide](https://bazilens.github.io/bazi-true-solar-time-guide/)
-- [Empirical Research Index (63 Published Studies)](https://bazilens.github.io/bazi-true-solar-time-guide/research-index.html)
+- [Empirical Research Index (64 Published Studies)](https://bazilens.github.io/bazi-true-solar-time-guide/research-index.html)
 
 ## Open Technical Reference Notes
 - [True Solar Time Offset Reference: Singapore, Hawaii & North America](https://bazilens.github.io/bazi-true-solar-time-guide/notes/true-solar-time-singapore-north-america.html): Quantitative longitude, Daylight Saving Time, and Equation of Time offsets across 8 global cities explaining BaZi Hour Pillar and 23:00 Day Pillar shifts.
@@ -25,15 +25,15 @@
 - [217+ Celebrity BaZi Chart Database](https://www.bazilens.com/celebrity)
 
 ## Latest Research Studies
+- [2027 BaZi Love Forecast: Spousal Palace Clash Explained](https://www.bazilens.com/blog/2027-bazi-love-marriage-spousal-palace-clash) (Relationships & Compatibility)
 - [2027 Tai Sui Guide for Ox, Goat, Dog, and Rat Charts](https://www.bazilens.com/blog/2027-tai-sui-ox-goat-dog-rat-bazi-guide) (Time & Cycles)
-- [2027 Fire Goat Forecast for Ren and Gui Water Charts](https://www.bazilens.com/blog/2027-fire-goat-ren-water-gui-water-bazi) (Time & Cycles)
-- [2027 Fire Goat Forecast for Jia and Yi Wood Charts](https://www.bazilens.com/blog/2027-fire-goat-jia-wood-yi-wood-bazi) (Career & Purpose)
 - [2027 Fire Goat Forecast for Geng and Xin Metal Charts](https://www.bazilens.com/blog/2027-fire-goat-geng-metal-xin-metal-bazi) (Career & Purpose)
-- [2027 Fire Goat Forecast for Bing and Ding Fire Charts](https://www.bazilens.com/blog/2027-fire-goat-bing-fire-ding-fire-bazi) (Time & Cycles)
 - [2027 Fire Goat Forecast for Wu and Ji Earth Charts](https://www.bazilens.com/blog/2027-fire-goat-wu-earth-ji-earth-bazi) (Time & Cycles)
-- [Why Yin Earth and Yin Fire Over-Give in Relationships](https://www.bazilens.com/blog/why-yin-earth-yin-fire-overgive-relationships) (Relationships & Compatibility)
-- [True Solar Time in BaZi: Why Clock Time Shifts Your Chart](https://www.bazilens.com/blog/true-solar-time-bazi-singapore-north-america) (Energy Diagnostics)
+- [2027 Fire Goat Forecast for Jia and Yi Wood Charts](https://www.bazilens.com/blog/2027-fire-goat-jia-wood-yi-wood-bazi) (Career & Purpose)
+- [2027 Fire Goat Forecast for Bing and Ding Fire Charts](https://www.bazilens.com/blog/2027-fire-goat-bing-fire-ding-fire-bazi) (Time & Cycles)
+- [2027 Fire Goat Forecast for Ren and Gui Water Charts](https://www.bazilens.com/blog/2027-fire-goat-ren-water-gui-water-bazi) (Time & Cycles)
 - [Told You Have 'Hurting Officer' as a Woman? BaZi Truth](https://www.bazilens.com/blog/hurting-officer-seven-killings-women-bazi-myth) (Relationships & Compatibility)
+- [True Solar Time in BaZi: Why Clock Time Shifts Your Chart](https://www.bazilens.com/blog/true-solar-time-bazi-singapore-north-america) (Energy Diagnostics)
+- [Why Yin Earth and Yin Fire Over-Give in Relationships](https://www.bazilens.com/blog/why-yin-earth-yin-fire-overgive-relationships) (Relationships & Compatibility)
 - [Am I Doomed With a 'Weak' Day Master? The Truth About 'Unfavorable' Luck Pillars](https://www.bazilens.com/blog/weak-day-master-no-favorable-luck-pillars-myth) (Time & Cycles)
 - [2027 Fire Goat Year (Ding Wei): Why Your Birth-Year Animal Isn’t Enough](https://www.bazilens.com/blog/2027-fire-goat-ding-wei-bazi-guide) (Time & Cycles)
-- [Why Free BaZi Calculators Get Your Favorable Element Wrong (The ‘Strong vs. Weak’ Trap)](https://www.bazilens.com/blog/bazi-calculator-favorable-element-trap) (System Architecture)
